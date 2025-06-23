@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #333;
+  background-color: #ddd;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.menu-header {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.chicken {
+  background-color: #f4cccc;
+}
+
+.beef {
+  background-color: #e06666;
+}
+
+.sushi {
+  background-color: #f9cb9c;
+}
+
+p {
+  margin-top: 25px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* --------- Responsive Design --------- */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-box {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .menu-title {
+    font-size: 22px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 20px;
+  }
+
+  .menu-header {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
